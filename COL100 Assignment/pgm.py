@@ -183,11 +183,11 @@ def MinEnergyPath(im):
 
 ########## Function Calls ##########
 # test.pgm is the image present in the same working directory
-x = readpgm('monalisa.pgm')
+x = readpgm('finlena.pgm')
 
-writepgm(edge_det(x), 'edgemona.pgm')
-writepgm(MinEnergyPath(x), 'minpathmona.pgm')
-writepgm(avg_filter(x), 'avgmona.pgm')
+writepgm(avg_filter(x), 'avglena.pgm')
+writepgm(edge_det(x), 'edgelena.pgm')
+writepgm(MinEnergyPath(x), 'minpathlena.pgm')
 # x is the image to output and test_o.pgm is the image output in the same working directory
-writepgm(x, 'test_omona.pgm')
+writepgm(x, 'test_olena.pgm')
 ###################################
